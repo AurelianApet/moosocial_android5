@@ -1,0 +1,107 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.Design">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Base.Theme.Design" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/bar_menu_top_color</item>
+        <item name="colorPrimaryDark">@color/primary_menu_color</item>
+        <item name="colorAccent">@color/main_tab_active_color</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="AppThemeLogin" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColor">@color/login_text_label_color</item>
+
+        <item name="android:windowBackground">@color/login_background_color</item>
+        <item name="android:editTextColor">@color/login_textedit_color</item>
+
+        <item name="colorControlNormal">@color/login_input_line_unforcus_color</item>
+        <item name="colorControlActivated">@color/login_input_forcus_color</item>
+        <item name="android:textColorHint">@color/login_input_hint_color</item>
+
+        <item name="colorButtonNormal">@color/login_button_color</item>
+        <item name="android:statusBarColor">@color/statusbar_color</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="AppThemeActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/bar_menu_top_color</item>
+        <item name="colorPrimaryDark">@color/primary_menu_color</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="AppThemeSplash" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/flash_background_color</item>
+        <item name="android:statusBarColor">@color/statusbar_color</item>
+    </style>
+
+    <style name="AppThemeDialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/iron</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="AppThemeMaterialDialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/popup_dialog_accent_color</item>
+        <item name="android:textColorSecondary">@color/popup_dialog_text_color</item>
+        <item name="android:background">@color/popup_dialog_background_color</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="AppThemeProcess" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/iron</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="NavDrawerAccountInfoText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/main_navigation_view_text_color</item>
+    </style>
+
+    <style name="AppThemeSignup" parent="AppThemeActivity">
+        <item name="android:editTextColor">@color/signup_textedit_color</item>
+        <item name="colorControlNormal">@color/signup_input_line_unforcus_color</item>
+        <item name="colorControlActivated">@color/signup_input_forcus_color</item>
+        <item name="android:textColorHint">@color/signup_input_hint_color</item>
+        <item name="colorButtonNormal">@color/signup_button_color</item>
+
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+
+    </style>
+
+    <style name="AppThemeStatus" parent="AppThemeActivity">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="SpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/spin_text_color</item>
+        <item name="android:width">200dp</item>
+    </style>
+
+    <style name="Widget.MooApp.Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/text_bar_color</item>
+    </style>
+    <style name="MooTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/text_bar_color</item>
+        <item name="tabTextAppearance">@style/MooCustomTabText</item>
+    </style>
+    <style name="MooCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/text_bar_color</item>
+    </style>
+    <style name="ProgressBar" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/process_bar</item>
+        <item name="android:progressBackgroundTint">#fff</item>
+    </style>
+
+</resources>

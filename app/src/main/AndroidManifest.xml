@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moosocial.moosocialapp" >
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:name=".MooApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:name=".presentation.view.activities.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".presentation.view.activities.NotificationActivity"
+            android:theme="@style/AppThemeActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".presentation.view.activities.SettingActivity"
+            android:theme="@style/AppThemeActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".presentation.view.activities.StatusActivity"
+            android:theme="@style/AppThemeStatus"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".presentation.view.activities.SelectFriendActivity"
+            android:theme="@style/AppThemeStatus"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".presentation.view.activities.ForgotActivity"
+            android:theme="@style/AppThemeLogin"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".presentation.view.activities.SignupActivity"
+            android:theme="@style/AppThemeLogin"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".presentation.view.activities.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppThemeSplash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".presentation.view.activities.LoginActivity"
+            android:theme="@style/AppThemeLogin">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".presentation.view.activities.LoginNewActivity"
+            android:theme="@style/AppThemeLogin">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".presentation.view.activities.LangingActivity"
+            android:theme="@style/AppThemeLogin">
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".presentation.view.activities.SearchResultsActivity"
+            android:theme="@style/AppThemeActivity"
+            android:label="@string/app_name">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.moosocial.moosocialapp" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name=".util.GCM.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name=".util.GCM.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+
+        <service
+            android:name=".util.GCM.RegistrationIntentService"
+            android:exported="false">
+        </service>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="df5e5989e654f8ceb3e791ccea7d8c34267733eb" />
+    </application>
+    <!-- [START gcm_permission] -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- [END gcm_permission] -->
+
+</manifest>

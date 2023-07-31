@@ -1,0 +1,219 @@
+{
+  "pages":[
+    {
+      "url": "/pages/about-us",
+      "label": "Acerca de nosotros",
+      "icon":"",
+      "key": "about_us",
+      "subLinks": []
+    },
+    {
+      "url": "/pages/terms-of-service",
+      "label": "Términos de servicio",
+      "icon":"",
+      "key": "term_service",
+      "subLinks": []
+    },
+    {
+      "url": "/pages/privacy-policy",
+      "label": "política de privacidad",
+      "icon":"",
+      "key": "privacy_policy",
+      "subLinks": []
+    },
+    {
+      "url": "/home/contact",
+      "label": "Contáctenos",
+      "icon":"",
+      "key": "contact_us",
+      "subLinks": []
+    }
+  ],
+  "account":[
+    {
+      "url": "/users/profile",
+      "label": "Información de Perfil",
+      "key": "account_profile"
+    },
+    {
+      "url": "/users/avatar",
+      "label": "Cambia la foto de perfil",
+      "key": "account_picture"
+    },
+    {
+      "url": "/users/password",
+      "label": "Cambiar la contraseña",
+      "key": "account_password"
+    },
+    {
+      "url": "/conversations/ajax_browse",
+      "label": "Mensaje",
+      "key": "message_manage"
+    },
+    {
+      "url": "/users/notification_settings",
+      "label": "Sistema de Notificación",
+      "key": "account_notification"
+    },
+    {
+      "url": "/users/email_settings",
+      "label": "Configuración de la notificación por correo electrónico",
+      "key": "account_email"
+    },
+    {
+      "url": "/friends/ajax_invite",
+      "label": "Invitar a amigos",
+      "key": "account_invite"
+    },
+    {
+      "url": "/friends/ajax_requests",
+      "label": "Peticiones de amistad",
+      "key": "friend_request"
+    }
+  ],
+  "items": [
+    {
+      "url": "/activities/ajax_browse/everyone",
+      "label": "Início",
+      "icon":"ic_home",
+      "key": "home",
+      "subLinks": []
+    },
+    {
+      "url": "/users",
+      "label": "Gente",
+      "icon":"ic_member",
+      "key": "users",
+      "subLinks": [
+        {
+          "url": "/users",
+          "label": "Todos"
+        },
+        {
+          "url": "/users/ajax_browse/friends",
+          "label": "Mis amigos"
+        }
+      ]
+    },
+    {
+      "url": "/blogs",
+      "label": "Blogs",
+      "icon":"ic_blog",
+      "key": "blogs",
+      "subLinks": [
+        {
+          "url": "/blogs",
+          "label": "Todas las entradas"
+        },
+        {
+          "url": "/blogs/browse/my",
+          "label": "Mis entradas"
+        },
+        {
+          "url": "/blogs/browse/friends",
+          "label": "Entradas Amigos'"
+        }
+      ]
+    },
+    {
+      "url": "/photos",
+      "label": "Fotos",
+      "icon":"ic_photo",
+      "key": "photos_albums",
+      "subLinks": [
+        {
+          "url": "/photos",
+          "label": "Todas las fotos"
+        },
+        {
+          "url": "/albums/browse/my",
+          "label": "Mis fotos"
+        },
+        {
+          "url": "/albums/browse/friends",
+          "label": "Fotos Amigos'"
+        }
+      ]
+    },
+    {
+      "url": "/videos",
+      "label": "Videos",
+      "icon":"ic_video",
+      "key": "videos",
+      "subLinks": [
+        {
+          "url": "/videos",
+          "label": "Todos los vídeos"
+        },
+        {
+          "url": "/videos/browse/my",
+          "label": "Mis videos"
+        },
+        {
+          "url": "/videos/browse/friends",
+          "label": "Videos Amigos'"
+        }
+      ]
+    },
+    {
+      "url": "/topics",
+      "label": "Temas",
+      "icon":"ic_topic",
+      "key": "topics",
+      "subLinks": [
+        {
+          "url": "/topics",
+          "label": "Todos los Temas"
+        },
+        {
+          "url": "/topics/browse/my",
+          "label": "Mis temas"
+        },
+        {
+          "url": "/topics/browse/friends",
+          "label": "Temas Amigos'"
+        }
+      ]
+    },
+    {
+      "url": "/groups",
+      "label": "Grupos",
+      "icon":"ic_group",
+      "key": "groups",
+      "subLinks": [
+        {
+          "url": "/groups",
+          "label": "Todos los Grupos"
+        },
+        {
+          "url": "/groups/browse/my",
+          "label": "Mis Grupos"
+        },
+        {
+          "url": "/groups/browse/friends",
+          "label": "Grupos de Amigos"
+        }
+      ]
+    },
+    {
+      "url": "/events",
+      "label": "Eventos",
+      "icon":"ic_event",
+      "key": "events",
+      "subLinks": [
+        {
+          "url": "/events",
+          "label": "Todos los eventos"
+        },
+        {
+          "url": "/events/browse/my",
+          "label": "Mis eventos"
+        },
+        {
+          "url": "/events/browse/friends",
+          "label": "Eventos de Amigos"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_background_slide_1"
+    android:id="@+id/moo_body"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_height="fill_parent"
+                android:background="?android:selectableItemBackground"
+                android:id="@+id/img_back"
+                android:src="@drawable/ic_bar_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/text_login"
+                android:gravity="center"
+                android:textSize="11pt"
+                android:paddingLeft="30dp"
+                android:textColor="@color/white"
+                android:id="@+id/editText"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content" android:layout_gravity="left"
+            android:layout_height="match_parent">
+            <Button
+                android:text="@string/text_sign_in"
+                android:layout_width="68dp"
+                android:layout_height="32dp"
+                android:layout_margin="3pt"
+                android:textColor="@color/status_button_post_color"
+                android:background="@color/status_button_post_background_color"
+                android:id="@+id/login" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_gravity="fill_vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/login_progress"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <ProgressBar
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Large"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:layout_gravity="fill_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id ="@+id/login_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <!--  Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/login_textedit_color"
+                android:hint="@string/login_hint_email" />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_error_message"
+                android:autoText="false"
+                android:textColor="@color/error_message"
+                android:paddingBottom="8dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--  Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/login_textedit_color"
+                android:hint="@string/login_hint_password"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_error_message"
+                android:autoText="false"
+                android:textColor="@color/error_message"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_or_sign_with"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:textSize="16dip"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_facebook"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_google"
+                android:fitsSystemWindows="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <View android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+        <TextView android:id="@+id/link_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_forgot"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:textSize="16dip"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

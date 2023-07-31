@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/lblListLinkHeader"
+            android:textColor="@color/blue_link"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/text_view_all"
+            android:layout_gravity="right"
+            android:textSize="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/lblListHeader"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/iron"
+            android:layout_toStartOf="@+id/lblListLinkHeader"
+            android:layout_below="@+id/lblListHeader"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="2dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

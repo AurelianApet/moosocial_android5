@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="primary">#E43F3F</color>
+  <color name="primary_dark">#E12929</color>
+  <color name="primary_darker">#CC1D1D</color>
+  <color name="accent">#FFFFFF</color>
+  <color name="window_background">#F6F6F6</color>
+
+  <color name="black">#000000</color>
+  <color name="jet">#222222</color>
+  <color name="oil">#333333</color>
+  <color name="monsoon">#777777</color>
+  <color name="jumbo">#888888</color>
+  <color name="aluminum">#999999</color>
+  <color name="base">#AAAAAA</color>
+  <color name="iron">#CCCCCC</color>
+  <color name="white">#FFFFFF</color>
+  <color name="blue">#3878de</color>
+  <color name="blue_link">#3878de</color>
+  <color name="blue_bar">#2c5ca7</color>
+  <color name="green">#449d44</color>
+  <color name="transparent">#1A000000</color>
+  <color name="black_alpha_50">#80000000</color>
+  <color name="blue_button">#9BC2EF</color>
+  <color name="blue_button_create">#62a41a</color>
+  <color name="mdtp_accent_color">#2c5ca7</color>
+
+  <color name="error_message">#FF0000</color>
+
+  <color name="flash_background_color">#3878de</color>
+
+  <color name="statusbar_color">#1A000000</color>
+  <color name="text_bar_color">#FFFFFF</color>
+
+  <color name="login_button_color">#9BC2EF</color>
+  <color name="login_button_text_color">#ffffffff</color>
+  <color name="login_text_label_color">#FFFFFF</color>
+  <color name="login_background_color">#3878de</color>
+  <color name="login_textedit_color">#FFFFFF</color>
+  <color name="login_input_line_unforcus_color">#CCCCCC</color>
+  <color name="login_input_hint_color">#CCCCCC</color>
+  <color name="login_input_forcus_color">#FFFFFF</color>
+
+  <color name="popup_dialog_accent_color">#FFFFFF</color>
+  <color name="popup_dialog_text_color">#FFFFFF</color>
+  <color name="popup_dialog_background_color">#3878de</color>
+
+  <color name="bar_menu_top_color">#3878de</color>
+  <color name="primary_menu_color">#2c5ca7</color>
+
+  <color name="spin_text_color">#000000</color>
+  <color name="spin_text_no_select_color">#CCCCCC</color>
+
+  <color name="signup_button_text_color">#ffffffff</color>
+  <color name="signup_text_color">#000000</color>
+  <color name="signup_textedit_color">#000000</color>
+  <color name="signup_input_line_unforcus_color">#CCCCCC</color>
+  <color name="signup_input_forcus_color">#80000000</color>
+  <color name="signup_input_hint_color">#CCCCCC</color>
+  <color name="signup_button_color">#62a41a</color>
+
+  <color name="main_tab_active_color">#f37c20</color>
+
+  <color name="main_navigation_view_text_color">#ffffffff</color>
+  <color name="main_navigation_menu_background_color">#FFFFFF</color>
+  <color name="main_navigation_menu_unactive_color">#747474</color>
+  <color name="main_navigation_menu_active_color">#3878de</color>
+  <color name="main_navigation_menu_icon_unactive_color">#747474</color>
+  <color name="main_navigation_menu_icon_active_color">#3878de</color>
+  <color name="main_navigation_menu_background_active_color">#E0E0E0</color>
+
+  <color name="notification_counter_color">#FFFFFF</color>
+
+  <color name="status_button_post_color">#000000</color>
+  <color name="status_button_post_background_color">#9BC2EF</color>
+  <color name="mention_text_background_color">#9BC2EF</color>
+  <color name="mention_text_color">#000000</color>
+  <color name="mention_select_background_color">#ffffffff</color>
+  <color name="mention_select_text_color">#000000</color>
+
+  <color name="process_bar">#3878de</color>
+
+  <color name="langing_button_color">#FFFFFF</color>
+  <color name="langing_button_login_background_color">#416183</color>
+  <color name="langing_button_signup_background_color">#9B9E95</color>
+
+  <color name="background_langing_color">#3878de</color>
+</resources>
